@@ -35,6 +35,8 @@ CDW_SAPP_CREDITCARD WHERE $CONDITIONS'
 --delete-target-dir
 --target-dir /user/maria_dev/AAA_CDW_SAPP/CDW_SAPP_Time_Id_Oozie
 
+             Source Table in MySql:CDW_SAPP.CDW_SAPP_CUSTOMER                 
+	     HDFS file location:/user/maria_dev/AAA_CDW_SAPP/CDW_SAPP_D_CUSTOMER_Oozie  
 sqoop import --connect jdbc:mysql://localhost/CDW_SAPP --driver com.mysql.jdbc.Driver 
 -m 1 
 --query 'select
